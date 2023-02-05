@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Authenticator</title>
+</head>
+<body>
+    <script>
+    function checkCredentials(userId, password) {
+        if (userId === "admin" && password === "secret") {
+            console.log("Welcome admin!");
+            document.write("Welcome admin!");
+        } else{
+            console.log("BAD LOGIN CREDENTIALS");
+            document.write("BAD LOGIN CREDENTIALS");
+        }
+    }
+
+    let enteredUserId = prompt("Enter your username:");
+    let enteredPassword = prompt("Enter your password:");
+    checkCredentials(enteredUserId, enteredPassword);
+    </script>
+    
+</body>
+</html>
